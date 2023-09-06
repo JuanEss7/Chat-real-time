@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.chat{
+    margin: 2rem auto;
+    width: 400px;
+    height: 400px;
+}
+.chat .chat-nombre{
+    width: 100%;
+    height: 8%;
+    color: #fff;
+    background-color: #273443;
+    display: flex;
+    align-items: center;
+}
+.chat-nombre .nombre{
+    font-size: 20px;
+    margin: 0 .5rem;
+}
+.chat .chat-mensaje{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url("./fondoW.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.chat .chat-mensaje .mensajes{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: end;
+    overflow-y: auto;
+}
+.mensajes .mensaje{
+    margin: .2em;
+    padding: .2rem .5rem;
+    width: max-content;
+    height: max-content;
+    color: #fff
+}
+.mensajes .mensaje.enviado{
+    align-self:flex-end;
+    border-radius: 8px 0px 5px 5px;
+    background-color: #128c7e;
+}
+.mensajes .mensaje.recibido{
+    align-self: flex-start;
+    border-radius: 0px 8px 5px 5px;
+    background-color: #273443;
+}
+
+.chat .chat-mensaje .enviar-mensaje{
+    display: flex;
+    padding: 0 .2em;
+    margin-bottom: 5px;
+}
+.enviar-mensaje .input{
+    flex-grow: 1;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    padding: .5rem .5rem;
+    margin-right: 2px;
+    background-color: #273443;
+    color: #fff;
+}
+.enviar-mensaje .btn-enviar{
+    border: none;
+    border-radius: 7px;
+    padding: .2rem .5rem;
+    color: #fff;
+    background-color: #25d366;
+}
